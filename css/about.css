@@ -1,0 +1,161 @@
+:root {
+    --dark-pink: #BA4270;
+    --white: #FBFCFE;
+    --san-juan-blue: #36536B;
+    --light-san-juan-blue: #6C8294;
+    --mirage-blue: #1B262F;
+    --charm-pink: #DA6D97;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF3F8;
+}
+
+.missons-section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.missons-section h1 {
+    margin-bottom: 48px;
+}
+
+.mission{
+    margin-bottom: 48px;
+}
+
+.title-mission {
+    color: var(--san-juan-blue);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.description-mission {
+    color: var(--light-san-juan-blue);
+    font-size: 16px;
+}
+
+.img-hero {
+    height: 300px;
+    background: url(../assets/about/mobile/image-team-members.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 48px;
+}
+
+.analyse-section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--light-san-juan-blue);
+    margin-bottom: 16px;
+}
+
+.analyses-wrapper {
+    border-top: 1px solid var(--light-san-juan-blue);
+    border-bottom: 1px solid var(--light-san-juan-blue);
+    padding: 16px 0px;
+}
+
+.analyse-wrapper {
+    margin-bottom: 32px;
+}
+
+.title-analyse {
+    font-size: 16px;
+    color: var(--light-san-juan-blue);
+    font-weight: 400;
+}
+
+.number-analyse {
+    font-size: 56px;
+    color: var(--dark-pink);
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 54px;
+        line-height: 56px;
+    }
+
+    .missons-section {
+        margin-bottom: 92px;
+    }
+
+    .mission {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+        text-align: left;
+    }
+
+    .title-mission {
+        width: 30%;
+        font-size: 32px;
+    }
+
+    .description-mission {
+        width: 70%;
+    }
+
+    .img-hero {
+        background: url(../assets/about/tablet/image-team-members.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .analyse-section {
+        margin-bottom: 64px;
+    }
+
+    .analyses-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0px;
+    }
+
+    .analyse-wrapper {
+        width: 32%;
+        text-align: left;
+        margin-bottom: 0px;
+        border-top: 1px solid var(--san-juan-blue);
+        border-bottom: 1px solid var(--san-juan-blue);
+        padding: 16px 0px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        text-align: left;
+        /* width: 80%; */
+    }
+
+    .missons-section {
+        max-width: 920px;
+    }
+
+    .img-hero {
+        background: url(../assets/about/desktop/image-team-members.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .analyse-section {
+        max-width: 1100px;
+    }
+}

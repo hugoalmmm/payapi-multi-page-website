@@ -1,0 +1,151 @@
+:root {
+    --dark-pink: #BA4270;
+    --white: #FBFCFE;
+    --san-juan-blue: #36536B;
+    --light-san-juan-blue: #6C8294;
+    --mirage-blue: #1B262F;
+    --charm-pink: #DA6D97;
+}
+
+body {
+    background-color: #EDF3F8;
+}
+
+.princing-section {
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan {
+    margin-bottom: 64px;
+}
+
+.title-plan {
+    font-size: 24px;
+    color: var(--dark-pink);
+    margin-bottom: 80px;
+}
+
+.price-plan {
+    color: var(--san-juan-blue);
+    font-size: 56px;
+    margin-bottom: 24px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--light-san-juan-blue);
+}
+
+.hr-bottom {
+    margin-bottom: 48px;
+}
+
+.avantages-plan-wrapper {
+    padding: 16px 0px;
+}
+
+.avantage-plan {
+    color: var(--light-san-juan-blue);
+    list-style-type: none;
+    margin: 8px 0px;
+}
+
+.active {
+    color: var(--san-juan-blue);
+}
+
+.active::before {
+    content: '✓';
+    color: var(--dark-pink);
+    margin-right: 8px;
+}
+
+.button-secondary {
+    color: var(--san-juan-blue);
+    border: 1px solid var(--san-juan-blue)
+}
+
+.cta-section {
+    margin-top: 80px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .princing-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 48px;
+    }
+
+    .plans-wrapper {
+        width: 30%;
+    }
+
+    .plan {
+        margin-bottom: 0px;
+    }
+
+    .title-plan {
+        margin-bottom: 12px;
+    }
+
+    .description-plan {
+        color: var(--light-san-juan-blue);
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .cta-section {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 1100px;
+    }
+
+    main {
+        max-width: 1100px;
+    }
+
+    .princing-section {
+        text-align: left;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    .cta-section {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    form {
+        margin-right: 0px;
+    }
+}
+
+

@@ -1,0 +1,174 @@
+:root {
+    --dark-pink: #BA4270;
+    --white: #FBFCFE;
+    --san-juan-blue: #36536B;
+    --light-san-juan-blue: #6C8294;
+    --mirage-blue: #1B262F;
+    --charm-pink: #DA6D97;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF3F8;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.form-section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.input-contact {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.form-contact input[type="text"],.form-contact input[type="email"] {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid var(--light-san-juan-blue);
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 0px 0px 16px 20px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.checkbox-wrapper label{
+    width: 90%;
+    font-size: 16px;
+    color: var(--san-juan-blue);
+}
+
+.checkbox-wrapper input {
+    width: 8%;
+    margin: 0px 12px 0px 0px;
+}
+
+.button-form-about {
+    background-color: transparent;
+    width: 45%;
+    border-radius: 32px;
+    border: 1px solid var(--mirage-blue);
+    padding: 12px 0px;
+
+}
+
+.partenaire-section {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.title-partenaire {
+    color: var(--san-juan-blue);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.error-message {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .h1 {
+        font-size: 48px;
+    } 
+
+    .form-section {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title-partenaire {
+        margin-bottom: 40px;
+    }
+
+    .checkbox-wrapper {
+        width: 100%;
+    }
+
+    .button-form-about {
+        width: 20%;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1100px;
+    }
+
+    h1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 48px;
+        text-align: left;
+        margin-bottom: 56px;
+    }
+
+    .partenaire-section, .form-section {
+        width: 50%;
+    }
+
+    .partenaire-section {
+        margin-top: 48px;
+    }
+
+    .all-wrappers {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 599px;
+    }
+
+    .partenaires-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .title-partenaire {
+        text-align: left;
+    }
+
+    .button-form-about {
+        width: 30%;
+    }
+
+}
